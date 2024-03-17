@@ -85,9 +85,11 @@ font:italic;
 </head>
 <body>
     <form action="/url" method="GET">
-        <p>Please enter your first and last name:</p>
-        <input type="text" placeholder="John">
-        <input type="text" placeholder="Doe">
+        <label>
+            Please enter your username
+            <input type="text" name="username" minlength="3" maxlength="20" required>
+        </label>
+        <button type="submit">Submit</button>  
     </form>
 </body>
 </html>
